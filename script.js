@@ -1,1 +1,5 @@
-const menuBtn=document.getElementById('menuBtn');const navLinks=document.getElementById('navLinks');menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));document.querySelectorAll('#navLinks a').forEach(link=>link.addEventListener('click',()=>navLinks.classList.remove('open')));document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',e=>{const target=document.querySelector(link.getAttribute('href'));if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'})}}));
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}})},{threshold:.12});
+reveals.forEach(el=>observer.observe(el));
+const themeBtn=document.getElementById('themeBtn');
+themeBtn.addEventListener('click',()=>{document.body.classList.toggle('light');themeBtn.textContent=document.body.classList.contains('light')?'☀':'☾'});
