@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef4ff, #f8faff);
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+.circle {
+    position: fixed;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.circle-1 {
+    width: 250px;
+    height: 250px;
+    background: #c7d2fe;
+    top: -80px;
+    left: -80px;
+}
+
+.circle-2 {
+    width: 300px;
+    height: 300px;
+    background: #dbeafe;
+    right: -100px;
+    bottom: -100px;
+}
+
+#website {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #dbe3f0;
+    border-radius: 20px;
+    padding: 14px;
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.12);
+}
+
+#header {
+    min-height: 140px;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(135deg, #1d4ed8, #4f46e5, #7c3aed);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    right: -60px;
+    top: -80px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.small-title {
+    margin: 0 0 5px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    opacity: 0.8;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 8px 0 0;
+    opacity: 0.85;
+    font-size: 14px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.menu {
+    padding: 10px 16px;
+    border-radius: 9px;
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu:hover {
+    background: #e0e7ff;
+    color: #3730a3;
+    transform: translateY(-2px);
+}
+
+.menu.active {
+    background: #4f46e5;
+    color: white;
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.25);
+}
+
+#konten {
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    margin-bottom: 12px;
+}
+
+.content-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+.badge-custom {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4338ca;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.content-title h2 {
+    margin: 0;
+    font-size: 23px;
+    color: #111827;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #4f46e5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 7px #eef2ff;
+}
+
+.berita {
+    display: flex;
+    gap: 18px;
+    padding: 20px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 13px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.berita:hover {
+    transform: translateY(-3px);
+    background: white;
+    border-color: #c7d2fe;
+    box-shadow: 0 10px 25px rgba(30, 64, 175, 0.08);
+}
+
+.number {
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.berita-content {
+    flex: 1;
+}
+
+.category {
+    color: #6366f1;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.berita h3 {
+    margin: 6px 0 8px;
+    font-size: 19px;
+    color: #111827;
+}
+
+.berita p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+    color: #64748b;
+    font-size: 14px;
+    max-width: 650px;
+}
+
+.selanjutnya {
+    color: #4f46e5;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.selanjutnya:hover {
+    color: #7c3aed;
+    text-decoration: underline;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #eff6ff, #eef2ff);
+    border: 1px solid #dbeafe;
+}
+
+.info-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.info-box h4 {
+    margin: 0 0 5px;
+    font-size: 15px;
+}
+
+.info-box p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: #111827;
+    color: #e5e7eb;
+    font-size: 13px;
+}
+
+#footer strong {
+    color: white;
+}
+
+.footer-right {
+    color: #9ca3af;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    #website {
+        padding: 8px;
+        border-radius: 15px;
+    }
+
+    #header {
+        padding: 22px;
+        min-height: auto;
+    }
+
+    .header-content {
+        gap: 12px;
+    }
+
+    .logo-box {
+        width: 55px;
+        height: 55px;
+    }
+
+    #header h1 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    #navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    #konten {
+        padding: 17px;
+    }
+
+    .berita {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .number {
+        min-width: 40px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .berita h3 {
+        font-size: 17px;
+    }
+
+    .info-box {
+        align-items: flex-start;
+    }
+}
