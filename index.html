@@ -3,69 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Kelas TIB3J</title>
-
-    <!-- Bootstrap lokal -->
+    <title>IFGF Balikpapan | Connect with God</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- CSS sendiri -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div id="website" class="container">
-
-        <!-- Header -->
-        <header id="header" class="p-4 mb-2">
-            <h1>Website Kelas TIB3J</h1>
-            <p>Profil Mahasiswa Teknologi Informasi</p>
-        </header>
-
-        <!-- Menu -->
-        <nav id="navbar" class="p-2 mb-2">
-            <a href="#home" class="menu active">Home</a>
-            <a href="#profil" class="menu">Profil</a>
-            <a href="#kontak" class="menu">Kontak</a>
-            <a href="#login" class="menu">Login</a>
-        </nav>
-
-        <!-- Konten -->
-        <main id="konten" class="p-4 mb-2">
-            <h2 id="home">Profil Saya</h2>
-
-            <article class="berita" id="profil">
-                <h3>Halo, saya Yoanes 👋</h3>
-                <p>
-                    Saya adalah mahasiswa yang sedang menempuh pendidikan
-                    di bidang Teknologi Informasi.
-                </p>
-
-                <div class="data-profil">
-                    <p><strong>Nama:</strong> Yoanes</p>
-                    <p><strong>Kelas:</strong> TIB3J</p>
-                    <p><strong>Semester:</strong> 3</p>
-                    <p><strong>Prodi:</strong> Teknologi Informasi</p>
-                    <p><strong>Hobi:</strong> Bermain Mobile Legends</p>
-                </div>
-            </article>
-
-            <article class="berita" id="kontak">
-                <h3>Tentang Saya</h3>
-                <p>
-                    Saya tertarik mempelajari teknologi informasi dan
-                    mengembangkan kemampuan dalam membuat website.
-                    Di waktu luang, saya suka bermain Mobile Legends.
-                </p>
-                <a href="#profil" class="selanjutnya">Lihat Profil...</a>
-            </article>
-        </main>
-
-        <!-- Footer -->
-        <footer id="footer" class="p-3">
-            <p>© 2026 Yoanes - TIB3J</p>
-        </footer>
-
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a class="brand" href="#home">IFGF <span>Balikpapan</span></a>
+        <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#pastor">Pastor</a>
+            <a href="#ibadah">Ibadah</a>
+            <a href="#kontak">Kontak</a>
+        </div>
     </div>
+</nav>
 
+<header id="home" class="hero">
+    <div class="container hero-content reveal">
+        <p class="eyebrow">SELAMAT DATANG</p>
+        <h1>IFGF <span>Balikpapan</span></h1>
+        <p class="hero-text">Connect with God, Make Disciples. Mari bertumbuh bersama dalam iman, kasih, dan pelayanan kepada Tuhan.</p>
+        <div class="hero-buttons">
+            <a href="#ibadah" class="btn-primary">Jadwal Ibadah</a>
+            <a href="#kontak" class="btn-outline">Hubungi Kami</a>
+        </div>
+    </div>
+</header>
+
+<main>
+<section id="tentang" class="section">
+    <div class="container">
+        <div class="section-title reveal">
+            <p>TENTANG KAMI</p>
+            <h2>IFGF Balikpapan</h2>
+        </div>
+        <div class="two-col">
+            <article class="card reveal">
+                <div class="icon">⛪</div>
+                <h3>Gereja dan Komunitas</h3>
+                <p>IFGF Balikpapan merupakan bagian dari International Full Gospel Fellowship (IFGF), jaringan gereja yang melayani di berbagai negara.</p>
+                <p>Kami rindu menjadi komunitas yang membantu setiap orang semakin dekat dengan Tuhan, bertumbuh dalam iman, dan melayani sesama.</p>
+            </article>
+            <article class="dark-card reveal">
+                <h3>Connect with God</h3>
+                <p>Terhubung dengan Tuhan melalui doa, firman Tuhan, ibadah, dan kehidupan bersama dalam komunitas.</p>
+                <h3>Make Disciples</h3>
+                <p>Bersama-sama bertumbuh menjadi murid Kristus dan membawa kasih Tuhan kepada orang lain.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="pastor" class="section soft">
+    <div class="container">
+        <div class="section-title reveal">
+            <p>PELAYANAN</p>
+            <h2>Gembala IFGF Balikpapan</h2>
+        </div>
+        <div class="pastor-card reveal">
+            <div class="pastor-icon">👤</div>
+            <h3>Pdp. Cahya Rudiyanta</h3>
+            <p class="role">Gembala Lokal IFGF Balikpapan</p>
+            <p>Pdp. Cahya Rudiyanta bersama Ibu Dian melayani dalam penggembalaan IFGF Balikpapan. Informasi IFGF Global menyebut beliau mulai menjadi gembala lokal pada 12 Juni 2022.</p>
+        </div>
+    </div>
+</section>
+
+<section id="ibadah" class="section">
+    <div class="container">
+        <div class="section-title reveal">
+            <p>JADWAL</p>
+            <h2>Waktu Ibadah</h2>
+        </div>
+        <div class="schedule-grid">
+            <article class="schedule-card reveal"><div class="icon">📅</div><h3>Rabu</h3><strong>19.00 WITA</strong><p>Kegiatan / ibadah pelayanan</p></article>
+            <article class="schedule-card reveal"><div class="icon">🗓️</div><h3>Sabtu</h3><strong>05.00 &amp; 17.00 WITA</strong><p>Jadwal kegiatan dan ibadah</p></article>
+            <article class="schedule-card featured reveal"><div class="icon">☀️</div><h3>Minggu</h3><strong>08.30 – 12.00 WITA</strong><p>Ibadah Minggu</p></article>
+        </div>
+        <div class="notice reveal">ℹ️ <span>Jadwal dapat berubah karena kegiatan khusus gereja. Sebaiknya konfirmasi melalui kontak resmi sebelum datang.</span></div>
+    </div>
+</section>
+
+<section id="kontak" class="contact-section">
+    <div class="container">
+        <div class="section-title light reveal"><p>INFORMASI</p><h2>Datang dan Beribadah Bersama Kami</h2></div>
+        <div class="contact-grid">
+            <article class="contact-card reveal"><div class="icon">📍</div><h3>Alamat</h3><p>Jl. Letkol Pol. H.M. Asnawi Arbain No. 51, Sepinggan, Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur.</p></article>
+            <article class="contact-card reveal"><div class="icon">💬</div><h3>WhatsApp</h3><p>0821-5511-2670</p><a class="small-btn" href="https://wa.me/6282155112670" target="_blank" rel="noopener">Chat WhatsApp</a></article>
+            <article class="contact-card reveal"><div class="icon">🔗</div><h3>Linktree Resmi</h3><p>Jadwal ibadah, media sosial, lokasi, Care Group, dan Prayer Request.</p><a class="small-btn" href="https://linktr.ee/ifgfbalikpapanofficial" target="_blank" rel="noopener">Buka Linktree</a></article>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="container">
+        <h3>IFGF Balikpapan</h3>
+        <p>Connect with God, Make Disciples.</p>
+        <p class="copyright">© <span id="year"></span> IFGF Balikpapan. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<button id="backToTop" aria-label="Kembali ke atas">↑</button>
+<script src="script.js"></script>
 </body>
 </html>
