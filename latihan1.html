@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 - JavaScript: DOM dan Event Handling</title>
+</head>
+<body>
+    <h1>Latihan 1: Sapa Pengguna</h1>
+
+    <input type="text" name="inputNama" id="inputNama" placeholder="Masukkan nama kamu">
+    <button onclick="sapaUser()">Sapa User</button>
+
+    <p id="Sapa"></p>
+
+    <script>
+        function sapaUser() {
+            // Mengambil nilai di input nama
+            let nama = document.getElementById('inputNama').value;
+            let pesan;
+
+            // Proses menampilkan pesan
+            if (nama.trim() === '') {
+                pesan = "Masukkan sebuah nama.";
+            } else {
+                pesan = "Halo! " + nama + "! Selamat belajar Javascript.";
+            }
+
+            // Output/keluaran
+            document.getElementById('Sapa').textContent = pesan;
+        }
+    </script>
+</body>
+</html>
