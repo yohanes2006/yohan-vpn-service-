@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <input type="number" name="inputBil1" id="inputBil1"> <br>
+    <input type="number" name="inputBil2" id="inputBil2"> <br>
+    <button onclick="klikTambah()">Penambahan</button>
+    <button onclick="klikKurang()">Pengurangan</button>
+    <button onclick="klikKali()">Perkalian</button>
+    <button onclick="klikBagi()">Pembagian</button>
+    <button onclick="klikBagisisa()">Pembagian Sisa</button>
+    <p id="hasilHitung"></p>
+
+    <script>
+        function klikTambah() {
+            let bil1 = Number(document.getElementById('inputBil1').value);
+            let bil2 = Number(document.getElementById('inputBil2').value);
+            let total = bil1 + bil2;
+            document.getElementById('hasilHitung').innerHTML = total;
+        }
+
+        function klikKurang() {
+            let bil1 = Number(document.getElementById('inputBil1').value);
+            let bil2 = Number(document.getElementById('inputBil2').value);
+            let total = bil1 - bil2;
+            document.getElementById('hasilHitung').innerHTML = total;
+        }
+
+        function klikKali() {
+            let bil1 = Number(document.getElementById('inputBil1').value);
+            let bil2 = Number(document.getElementById('inputBil2').value);
+            let total = bil1 * bil2;
+            document.getElementById('hasilHitung').innerHTML = total;
+        }
+
+        function klikBagi() {
+            let bil1 = Number(document.getElementById('inputBil1').value);
+            let bil2 = Number(document.getElementById('inputBil2').value);
+
+            // Pengecualian jika pembagi (bil2) adalah 0
+            if (bil2 === 0) {
+                document.getElementById('hasilHitung').innerHTML = "Tidak dapat dibagi dengan 0";
+            } else {
+                let total = bil1 / bil2;
+                document.getElementById('hasilHitung').innerHTML = total;
+            }
+        }
+
+        function klikBagisisa() {
+            let bil1 = Number(document.getElementById('inputBil1').value);
+            let bil2 = Number(document.getElementById('inputBil2').value);
+
+            // Pengecualian jika pembagi (bil2) adalah 0
+            if (bil2 === 0) {
+                document.getElementById('hasilHitung').innerHTML = "Tidak dapat dibagi dengan 0";
+            } else {
+                let total = bil1 % bil2;
+                document.getElementById('hasilHitung').innerHTML = total;
+            }
+        }
+    </script>
+</body>
+</html>
